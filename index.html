@@ -146,6 +146,27 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
 .score-row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #777;padding:7px 0;font-size:.85rem}
 #birthdayCount{font:700 1.15rem 'Space Grotesk',sans-serif;color:#1239d8;margin-top:8px}
 #rankChart{width:100%;height:140px;border:2px solid #000;background:#f7faff;display:block;margin-top:10px}
+
+.social-section-title{margin:28px 0 6px;font-size:1.12rem;border-bottom:2px solid #111;padding-bottom:8px}
+.mlbb-panel{margin:12px 0 24px;background:linear-gradient(145deg,#10182c,#172e59);color:#fff;border:3px solid #080d19;border-radius:16px;overflow:hidden;box-shadow:6px 6px 0 #000}
+.mlbb-panel-head{display:flex;align-items:center;gap:11px;padding:14px;background:linear-gradient(100deg,#13254a,#244f91);border-bottom:1px solid rgba(255,255,255,.2)}
+.mlbb-emblem{width:42px;height:42px;display:grid;place-items:center;border:2px solid #8ec5ff;border-radius:12px;background:#0b1831;font-size:1.45rem}
+.mlbb-panel-head b{display:block;letter-spacing:.08em;font-size:.88rem}.mlbb-panel-head small{display:block;color:#b8d6ff;font-size:.72rem;margin-top:3px}
+.mlbb-live{margin-left:auto;font-size:.62rem;font-weight:900;letter-spacing:.08em;color:#b8e7ff;border:1px solid #6ba9e8;border-radius:20px;padding:5px 8px}
+.mlbb-panel-body .feature-card{margin:0;background:transparent;color:#fff;border:0;box-shadow:none;padding:14px}
+.mlbb-panel-body .feature-card h2{color:#d8eaff!important}.mlbb-panel-body .sub{color:#c1d4ef}
+.mlbb-panel-body .gin,.mlbb-panel-body .out{color:#111}.mlbb-panel-body .chip{background:#eaf3ff;color:#10213c;border-color:#9fcaff}
+.mlbb-panel-body #rankChart{background:#f7faff;border-color:#8abfff}
+.project-hub{margin:12px 0 24px;padding:14px;background:#111827;border:3px solid #05070c;border-radius:4px;box-shadow:6px 6px 0 #000;color:#fff}
+.project-hub-top{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-bottom:12px;border-bottom:1px solid #46546b;color:#9fc5ff;font-size:.7rem;letter-spacing:.14em}
+.project-hub-top b{color:#fff;font-size:.85rem}
+.project-hub-grid{display:grid;grid-template-columns:1fr;gap:9px;padding-top:12px}
+.project-hub .project-link{position:relative;margin:0;padding:13px 38px 13px 13px;background:linear-gradient(110deg,#1e293b,#263b58);border:1px solid #55749d;border-left:5px solid #59a6ff;border-radius:3px;color:#fff;font-size:.88rem;transition:transform .18s,border-color .18s}
+.project-hub .project-link::after{content:'↗';position:absolute;right:13px;top:50%;transform:translateY(-50%);font-size:1.15rem;color:#8fc4ff}
+.project-hub .project-link:hover{transform:translateX(3px);border-color:#9bcaff}
+.project-hub .project-link:last-child{border-left-color:#a78bfa;background:linear-gradient(110deg,#29233d,#3b3158);color:#e5dcff}
+@media(min-width:520px){.project-hub-grid{grid-template-columns:1fr 1fr}}
+
 @media(min-width:760px){#menuBtn{display:block}#main{max-width:760px}#sidePanel{width:300px}}
 @media(max-width:759px){#menuBtn{display:block}#snd{right:10px}#main{padding-top:68px}}
 
@@ -209,6 +230,30 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
     <a target="_blank" rel="noopener" class="item game" data-id="10247166557" href="intent://#Intent;package=com.dts.freefireth;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.dts.freefireth;end"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.2 2-4.2 0 2 .8 3 2 3 0-3-1-5 1-8.8z"/></svg></span><span>ID Free Fire<small>10247166557</small></span></a>
     <a class="item" id="bMabar" href="https://wa.me/6285151833180?text=Haiii%20%F0%93%86%A9%20%E1%96%BD%E1%90%B8%C9%AA%D5%B2%E1%98%9C%20%E0%BC%92%20%E1%99%83%E1%B4%80%CC%B7%F0%9D%96%BF%E1%B4%A2%E1%B4%A2%20%F0%93%86%AA%2C%20ayo%20mabar%20bareng%21" target="_blank" rel="noopener"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11"/><path d="M7 10v5M4.5 12.5h5M16 11h.01M19 14h.01"/></svg></span><span>Ajak Mabar<small>Kirim ajakan main bareng lewat WhatsApp</small></span></a>
     <button class="item" id="bCopy"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17"/><rect x="9" y="2" width="6" height="4"/><path d="M9 11h6M9 15h6"/></svg></span><span>Salin Semua Kontak<small>WA, email, TikTok, YouTube, dan ID game</small></span></button>
+
+    <h2 class="social-section-title">🎮 Gaming & Rank</h2>
+    <p class="sub">Catat perkembangan rank Mobile Legends kamu.</p>
+    <div class="mlbb-panel" id="mlbb">
+      <div class="mlbb-panel-head"><span class="mlbb-emblem">⚔️</span><div><b>MLBB RANK TRACKER</b><small>Personal season record</small></div><span class="mlbb-live">TRACKER</span></div>
+      <div class="mlbb-panel-body"><h2>🏆 MLBB Rank Tracker</h2><p class="sub">Catat rank dan riwayat menang/kalah secara manual.</p>
+      <label class="fl" for="mlRank">Rank sekarang</label><select class="gin sel" id="mlRank"><option>Warrior</option><option>Elite</option><option>Master</option><option>Grandmaster</option><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
+      <label class="fl" for="mlTarget">Target rank</label><select class="gin sel" id="mlTarget"><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
+      <div class="opts two"><button class="btn t" id="mlWin">+ Menang</button><button class="btn" id="mlLoss">+ Kalah</button></div>
+      <div class="chips" style="margin-top:14px"><div class="chip"><b id="mlW">0</b>Menang</div><div class="chip"><b id="mlL">0</b>Kalah</div><div class="chip"><b id="mlRate">0%</b>Win rate</div></div>
+      <div id="mlHistory" class="out">Belum ada pertandingan.</div><canvas id="rankChart" width="600" height="140"></canvas>
+      <button class="btn" id="mlReset" style="width:100%;margin-top:12px">Reset riwayat rank</button></div>
+    </div>
+
+    <h2 class="social-section-title projects-heading">🚀 Project Showcase</h2>
+    <p class="sub">Kumpulan website dan project yang sedang atau sudah dibuat.</p>
+    <section class="project-hub" id="projects">
+      <div class="project-hub-top"><span>DAFFZZ LAB</span><b>MY PROJECTS</b></div>
+      <div class="project-hub-grid"><a class="project-link" href="https://hacker-kingdafzz-1.onrender.com/" target="_blank" rel="noopener">𓆩 ᖽᐸɪղᘜ ༒ ᙃᴀ̷𝖿ᴢᴢ 𓆪</a>
+      <a class="project-link" href="https://hacker-kingdafzz-1.onrender.com/" target="_blank" rel="noopener">https://hacker-kingdafzz-1.onrender.com/</a>
+      <a class="project-link" href="https://hollow-dafzz.onrender.com" target="_blank" rel="noopener">https://hollow-dafzz.onrender.com</a>
+      <a class="project-link" href="https://jadwal-sekolah.onrender.com/" target="_blank" rel="noopener">https://jadwal-sekolah.onrender.com/</a>
+      <div class="project-link">Nantikan.............</div></div>
+    </section>
   </div>
 
   <!-- DASHBOARD -->
@@ -224,18 +269,7 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
     <h2 style="margin-top:22px;font-size:1.1rem">Main game <span class="name">𓆩 ᖽᐸɪղᘜ ༒ ᙃᴀ̷𝖿ᴢᴢ 𓆪</span></h2>
     <button class="btn t" id="gOpen" style="width:100%;flex:none">Buka 60 Game</button>
 
-    <section class="feature-card" id="birthday">
-      <h2>🎂 Countdown Ulang Tahun</h2><p class="sub">Menuju ulang tahun ke-15 · 13 September 2027</p><div id="birthdayCount">Menghitung...</div>
-    </section>
-    <section class="feature-card" id="mlbb">
-      <h2>🏆 MLBB Rank Tracker</h2><p class="sub">Catat rank dan riwayat menang/kalah secara manual.</p>
-      <label class="fl" for="mlRank">Rank sekarang</label><select class="gin sel" id="mlRank"><option>Warrior</option><option>Elite</option><option>Master</option><option>Grandmaster</option><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
-      <label class="fl" for="mlTarget">Target rank</label><select class="gin sel" id="mlTarget"><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
-      <div class="opts two"><button class="btn t" id="mlWin">+ Menang</button><button class="btn" id="mlLoss">+ Kalah</button></div>
-      <div class="chips" style="margin-top:14px"><div class="chip"><b id="mlW">0</b>Menang</div><div class="chip"><b id="mlL">0</b>Kalah</div><div class="chip"><b id="mlRate">0%</b>Win rate</div></div>
-      <div id="mlHistory" class="out">Belum ada pertandingan.</div><canvas id="rankChart" width="600" height="140"></canvas>
-      <button class="btn" id="mlReset" style="width:100%;margin-top:12px">Reset riwayat rank</button>
-    </section>
+
     <section class="feature-card" id="gallery">
       <h2>🖼️ Gallery & Portfolio</h2><p class="sub">Simpan foto atau screenshot project di perangkat ini saja.</p>
       <input class="gin" id="galleryFiles" type="file" accept="image/*" multiple>
@@ -245,14 +279,7 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
     <section class="feature-card" id="scores">
       <h2>🎮 Best Score · 60 Game</h2><p class="sub">Rekor terbaik tersimpan otomatis di perangkat ini.</p><div id="bestScores">Belum ada skor yang tercatat. Mainkan game untuk menyimpan rekor.</div>
     </section>
-    <section class="feature-card" id="projects">
-      <h2>💻 PROJECT-PROJECT</h2>
-      <a class="project-link" href="https://hacker-kingdafzz-1.onrender.com/" target="_blank" rel="noopener">𓆩 ᖽᐸɪղᘜ ༒ ᙃᴀ̷𝖿ᴢᴢ 𓆪</a>
-      <a class="project-link" href="https://hacker-kingdafzz-1.onrender.com/" target="_blank" rel="noopener">https://hacker-kingdafzz-1.onrender.com/</a>
-      <a class="project-link" href="https://hollow-dafzz.onrender.com" target="_blank" rel="noopener">https://hollow-dafzz.onrender.com</a>
-      <a class="project-link" href="https://jadwal-sekolah.onrender.com/" target="_blank" rel="noopener">https://jadwal-sekolah.onrender.com/</a>
-      <div class="project-link">Nantikan.............</div>
-    </section>
+
 
     <h2 style="margin-top:22px;font-size:1.1rem">Kata motivasi</h2>
     <div class="quote" id="quote"></div>
@@ -263,6 +290,9 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
   <div class="tab" id="t-about">
     <h2>Tentang Aku</h2>
     <p class="sub">Kenalan dulu yuk.</p>
+    <section class="feature-card" id="birthday">
+      <h2>🎂 Countdown Ulang Tahun</h2><p class="sub">Menuju ulang tahun ke-15 · 13 September 2027</p><div id="birthdayCount">Menghitung...</div>
+    </section>
     <div class="chips"><div class="chip"><b>14</b>tahun</div><div class="chip"><b>VIIIA</b>kelas</div><div class="chip"><b>#1</b>target</div></div>
     <div class="typed cur" id="typed"></div>
     <button class="btn t" id="nextBtn">Lanjut</button>
@@ -309,7 +339,7 @@ function type(el,text,speed,done){const ch=Array.from(text);let i=0;el.classList
 
 /* Intro */
 type($("#q"),"Kamu siapanya "+NAME+" ?",55,()=>$("#choice").classList.add("show"));
-$("#bMusuh").onclick=()=>{sfx.lose();$("#intro").classList.remove("on");$("#enemy").classList.add("on")};
+$("#bMusuh").onclick=()=>{sfx.lose();monkeySound();$("#intro").classList.remove("on");$("#enemy").classList.add("on")};
 let entered=false;
 $("#bTeman").onclick=()=>{if(entered)return;entered=true;sfx.win();startMusic();$("#intro").classList.add("away");
   setTimeout(()=>{sfx.paper();$("#intro").classList.remove("on","away");const m=$("#main");m.classList.add("on","first");showQuote();setTimeout(()=>m.classList.remove("first"),1200)},480)};
@@ -340,6 +370,12 @@ function noise(d,v){if(!on)return;const c=ac();if(!c)return;const n=Math.floor(c
 const sfx={click:()=>tone(660,.07,"square",.04),tick:()=>tone(1400+Math.random()*300,.025,"square",.015),pop:()=>tone(880,.1,"sine",.06),
  win:()=>[523,659,784,1047].forEach((f,i)=>tone(f,.2,"triangle",.07,i*.09)),lose:()=>tone(300,.4,"sawtooth",.06,0,80),
  paper:()=>noise(.7,.08),check:()=>{tone(784,.08,"triangle",.07);tone(1175,.14,"triangle",.07,.07)}};
+// Efek tambahan khusus pilihan MUSUH. Tidak mengubah atau mengganti suara sfx yang sudah ada.
+function monkeySound(){if(!on)return;const c=ac();if(!c)return;const now=c.currentTime;
+  const hoot=(start,f1,f2,d,vol)=>{const o=c.createOscillator(),g=c.createGain(),filter=c.createBiquadFilter();o.type="sawtooth";o.frequency.setValueAtTime(f1,now+start);o.frequency.exponentialRampToValueAtTime(f2,now+start+d);filter.type="bandpass";filter.frequency.setValueAtTime(850,now+start);filter.Q.value=1.4;g.gain.setValueAtTime(.0001,now+start);g.gain.exponentialRampToValueAtTime(vol,now+start+.035);g.gain.exponentialRampToValueAtTime(.0001,now+start+d);o.connect(filter);filter.connect(g);g.connect(c.destination);o.start(now+start);o.stop(now+start+d)};
+  hoot(0,.09,.22,.22,.055);hoot(.2,.24,.12,.28,.06);hoot(.49,.13,.3,.2,.05);
+  tone(620,.12,"triangle",.035,.72,210);
+}
 function startMusic(){if(music)return;let i=0;const q=[392,523,659,784,659,523,587,698];music=setInterval(()=>tone(q[i++%8],.5,"sine",.022),560)}
 document.addEventListener("click",e=>{if(e.target.closest("button,a.item"))sfx.click()});
 $("#snd").onclick=e=>{on=!on;e.currentTarget.innerHTML=on?ICON_ON:ICON_OFF};
@@ -795,7 +831,7 @@ trender();
  const menu=$('#menuBtn'),close=()=>{document.body.classList.remove('side-open');menu?.setAttribute('aria-expanded','false')};
  menu?.addEventListener('click',()=>{const on=document.body.classList.toggle('side-open');menu.setAttribute('aria-expanded',String(on))});
  $('#sideShade')?.addEventListener('click',close);
- document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.jump;close();document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('on',x.dataset.t===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.id==='t-'+id));if(id==='birthday'||id==='mlbb'||id==='gallery'||id==='scores'||id==='projects'){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));$('#t-dash').classList.add('on')}setTimeout(()=>$('#'+id)?.scrollIntoView({behavior:'smooth',block:'start'}),80)}));
+ document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.jump;const parent=({birthday:'about',mlbb:'social',projects:'social',gallery:'dash',scores:'dash'})[id]||id;close();document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('on',x.dataset.t===parent));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.id==='t-'+parent));setTimeout(()=>$('#'+id)?.scrollIntoView({behavior:'smooth',block:'start'}),100)}));
  $('#sideTools')?.addEventListener('click',()=>{close();$('#bTool')?.click()});
  // Countdown ke 15 tahun pada 13 September 2027
  function birthday(){const target=new Date(2027,8,13);const now=new Date();const days=Math.max(0,Math.ceil((target-new Date(now.getFullYear(),now.getMonth(),now.getDate()))/86400000));$('#birthdayCount').textContent=days===0?'Selamat ulang tahun ke-15! 🎉':'Ulang tahun ke-15 tinggal '+days+' hari';}
