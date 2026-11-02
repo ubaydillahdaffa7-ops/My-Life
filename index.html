@@ -231,57 +231,155 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
     <a class="item" id="bMabar" href="https://wa.me/6285151833180?text=Haiii%20%F0%93%86%A9%20%E1%96%BD%E1%90%B8%C9%AA%D5%B2%E1%98%9C%20%E0%BC%92%20%E1%99%83%E1%B4%80%CC%B7%F0%9D%96%BF%E1%B4%A2%E1%B4%A2%20%F0%93%86%AA%2C%20ayo%20mabar%20bareng%21" target="_blank" rel="noopener"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11"/><path d="M7 10v5M4.5 12.5h5M16 11h.01M19 14h.01"/></svg></span><span>Ajak Mabar<small>Kirim ajakan main bareng lewat WhatsApp</small></span></a>
     <button class="item" id="bCopy"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17"/><rect x="9" y="2" width="6" height="4"/><path d="M9 11h6M9 15h6"/></svg></span><span>Salin Semua Kontak<small>WA, email, TikTok, YouTube, dan ID game</small></span></button>
 
-  <!-- GAMING & RANK -->
-<h2 class="social-section-title">🎮 Gaming & Rank</h2>
-<p class="sub">Catat perkembangan rank Mobile Legends kamu.</p>
+/* MLBB NAVY THEME */
+.mlbb-panel {
+  margin:12px 0 24px;
+  background:linear-gradient(145deg,#0b1728,#101f33);
+  color:#e8eef7;
+  border:1px solid #2b405b;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(0,0,0,.22);
+}
 
-<div class="mlbb-panel" id="mlbb">
+.mlbb-panel-head {
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:14px;
+  background:linear-gradient(110deg,#101d31,#1c304a);
+  border-bottom:1px solid #344a65;
+}
 
-  <div class="mlbb-panel-head">
-    <span class="mlbb-emblem">⚔️</span>
-    <div>
-      <b>MLBB RANK TRACKER</b>
-      <small>Personal season record</small>
-    </div>
-    <span class="mlbb-live">TRACKER</span>
-  </div>
+.mlbb-panel-head b {
+  display:block;
+  letter-spacing:.08em;
+  font-size:.88rem;
+  color:#edf3fb;
+}
 
-  <div class="mlbb-panel-body">
+.mlbb-panel-head small {
+  display:block;
+  color:#9fb1c9;
+  font-size:.72rem;
+  margin-top:3px;
+}
 
-    <h2>🏆 MLBB Rank Tracker</h2>
-    <p class="sub">Catat rank dan riwayat menang/kalah secara manual.</p>
+.mlbb-panel-body {
+  padding:14px;
+}
 
-    <label class="fl" for="mlRank">Rank sekarang</label>
-    <select class="gin sel" id="mlRank">
-      <option>Warrior</option>
-      <option>Elite</option>
-      <option>Master</option>
-      <option>Grandmaster</option>
-      <option>Epic</option>
-      <option>Legend</option>
-      <option>Mythic</option>
-      <option>Mythical Honor</option>
-      <option>Mythical Glory</option>
-      <option>Mythical Immortal</option>
-    </select>
+.mlbb-panel-body h2 {
+  margin:0 0 7px;
+  color:#edf3fb;
+  font-size:1.08rem;
+}
 
-    <label class="fl" for="mlTarget">Target rank</label>
-    <select class="gin sel" id="mlTarget">
-      <option>Epic</option>
-      <option>Legend</option>
-      <option>Mythic</option>
-      <option>Mythical Honor</option>
-      <option>Mythical Glory</option>
-      <option>Mythical Immortal</option>
-    </select>
+.mlbb-panel-body .sub {
+  color:#9fb1c9;
+}
 
-    <div class="opts two">
-      <button class="btn t" id="mlWin">+ Menang</button>
-      <button class="btn" id="mlLoss">+ Kalah</button>
-    </div>
+.mlbb-panel-body .fl {
+  display:block;
+  margin:14px 0 6px;
+  color:#c3d0e1;
+  font-size:.85rem;
+}
 
-  </div>
-</div>
+.mlbb-panel-body .gin,
+.mlbb-panel-body .sel {
+  width:100%;
+  background:#101f33;
+  color:#e8eef7;
+  border:1px solid #344a65;
+  border-radius:9px;
+  box-shadow:none;
+  font-size:1rem;
+  padding:12px;
+  text-align:left;
+}
+
+.mlbb-panel-body .gin option,
+.mlbb-panel-body .sel option {
+  background:#101f33;
+  color:#e8eef7;
+}
+
+.mlbb-panel-body .opts {
+  gap:10px;
+  margin-top:15px;
+}
+
+.mlbb-panel-body .opts .btn,
+.mlbb-panel-body>#mlReset {
+  background:linear-gradient(110deg,#1c304a,#15263d);
+  color:#e8eef7;
+  border:1px solid #405875;
+  border-radius:9px;
+  box-shadow:none;
+  font-size:.92rem;
+  padding:12px 9px;
+}
+
+.mlbb-panel-body .opts .btn.t {
+  background:linear-gradient(110deg,#203955,#192d45);
+  border-color:#496581;
+  color:#edf3fb;
+}
+
+.mlbb-panel-body .opts .btn:active,
+.mlbb-panel-body>#mlReset:active {
+  transform:scale(.98);
+  box-shadow:none;
+}
+
+.mlbb-panel-body .chips {
+  gap:8px;
+  margin:14px 0;
+}
+
+.mlbb-panel-body .chip,
+.mlbb-panel-body .chip:nth-child(2) {
+  background:#14263c;
+  color:#dce6f3;
+  border:1px solid #344a65;
+  border-radius:9px;
+  box-shadow:none;
+  padding:10px 4px;
+}
+
+.mlbb-panel-body .chip b {
+  color:#f0f4fa;
+  font-size:1.25rem;
+}
+
+.mlbb-panel-body .out {
+  background:#101f33;
+  color:#dce6f3;
+  border:1px solid #344a65;
+  border-radius:9px;
+  box-shadow:none;
+  padding:12px;
+}
+
+.mlbb-panel-body .score-row {
+  border-color:#344a65;
+}
+
+.mlbb-panel-body #rankChart {
+  display:block;
+  width:100%;
+  height:140px;
+  margin-top:12px;
+  background:#0e1c2e;
+  border:1px solid #344a65;
+  border-radius:9px;
+}
+
+.mlbb-panel-body>#mlReset {
+  width:100%;
+  margin-top:12px;
+}
 
     <h2 class="social-section-title projects-heading">🚀 Project Showcase</h2>
     <p class="sub">Kumpulan website dan project yang sedang atau sudah dibuat.</p>
