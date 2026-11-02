@@ -231,18 +231,57 @@ body.side-open #sidePanel{transform:translateX(0)}body.side-open #sideShade{opac
     <a class="item" id="bMabar" href="https://wa.me/6285151833180?text=Haiii%20%F0%93%86%A9%20%E1%96%BD%E1%90%B8%C9%AA%D5%B2%E1%98%9C%20%E0%BC%92%20%E1%99%83%E1%B4%80%CC%B7%F0%9D%96%BF%E1%B4%A2%E1%B4%A2%20%F0%93%86%AA%2C%20ayo%20mabar%20bareng%21" target="_blank" rel="noopener"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="11"/><path d="M7 10v5M4.5 12.5h5M16 11h.01M19 14h.01"/></svg></span><span>Ajak Mabar<small>Kirim ajakan main bareng lewat WhatsApp</small></span></a>
     <button class="item" id="bCopy"><span class="ic"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17"/><rect x="9" y="2" width="6" height="4"/><path d="M9 11h6M9 15h6"/></svg></span><span>Salin Semua Kontak<small>WA, email, TikTok, YouTube, dan ID game</small></span></button>
 
-    <h2 class="social-section-title">🎮 Gaming & Rank</h2>
-    <p class="sub">Catat perkembangan rank Mobile Legends kamu.</p>
-    <div class="mlbb-panel" id="mlbb">
-      <div class="mlbb-panel-head"><span class="mlbb-emblem">⚔️</span><div><b>MLBB RANK TRACKER</b><small>Personal season record</small></div><span class="mlbb-live">TRACKER</span></div>
-      <div class="mlbb-panel-body"><h2>🏆 MLBB Rank Tracker</h2><p class="sub">Catat rank dan riwayat menang/kalah secara manual.</p>
-      <label class="fl" for="mlRank">Rank sekarang</label><select class="gin sel" id="mlRank"><option>Warrior</option><option>Elite</option><option>Master</option><option>Grandmaster</option><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
-      <label class="fl" for="mlTarget">Target rank</label><select class="gin sel" id="mlTarget"><option>Epic</option><option>Legend</option><option>Mythic</option><option>Mythical Honor</option><option>Mythical Glory</option><option>Mythical Immortal</option></select>
-      <div class="opts two"><button class="btn t" id="mlWin">+ Menang</button><button class="btn" id="mlLoss">+ Kalah</button></div>
-      <div class="chips" style="margin-top:14px"><div class="chip"><b id="mlW">0</b>Menang</div><div class="chip"><b id="mlL">0</b>Kalah</div><div class="chip"><b id="mlRate">0%</b>Win rate</div></div>
-      <div id="mlHistory" class="out">Belum ada pertandingan.</div><canvas id="rankChart" width="600" height="140"></canvas>
-      <button class="btn" id="mlReset" style="width:100%;margin-top:12px">Reset riwayat rank</button></div>
+  <!-- GAMING & RANK -->
+<h2 class="social-section-title">🎮 Gaming & Rank</h2>
+<p class="sub">Catat perkembangan rank Mobile Legends kamu.</p>
+
+<div class="mlbb-panel" id="mlbb">
+
+  <div class="mlbb-panel-head">
+    <span class="mlbb-emblem">⚔️</span>
+    <div>
+      <b>MLBB RANK TRACKER</b>
+      <small>Personal season record</small>
     </div>
+    <span class="mlbb-live">TRACKER</span>
+  </div>
+
+  <div class="mlbb-panel-body">
+
+    <h2>🏆 MLBB Rank Tracker</h2>
+    <p class="sub">Catat rank dan riwayat menang/kalah secara manual.</p>
+
+    <label class="fl" for="mlRank">Rank sekarang</label>
+    <select class="gin sel" id="mlRank">
+      <option>Warrior</option>
+      <option>Elite</option>
+      <option>Master</option>
+      <option>Grandmaster</option>
+      <option>Epic</option>
+      <option>Legend</option>
+      <option>Mythic</option>
+      <option>Mythical Honor</option>
+      <option>Mythical Glory</option>
+      <option>Mythical Immortal</option>
+    </select>
+
+    <label class="fl" for="mlTarget">Target rank</label>
+    <select class="gin sel" id="mlTarget">
+      <option>Epic</option>
+      <option>Legend</option>
+      <option>Mythic</option>
+      <option>Mythical Honor</option>
+      <option>Mythical Glory</option>
+      <option>Mythical Immortal</option>
+    </select>
+
+    <div class="opts two">
+      <button class="btn t" id="mlWin">+ Menang</button>
+      <button class="btn" id="mlLoss">+ Kalah</button>
+    </div>
+
+  </div>
+</div>
 
     <h2 class="social-section-title projects-heading">🚀 Project Showcase</h2>
     <p class="sub">Kumpulan website dan project yang sedang atau sudah dibuat.</p>
